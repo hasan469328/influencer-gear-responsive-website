@@ -9,6 +9,7 @@
 
 img {
   display: block;
+  max-width: 100%;
 }
 /* utility  */
 :root {
@@ -35,7 +36,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px 20px;
   /* padding: 85px 120px 50px; */
@@ -60,7 +61,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px 20px;
   gap: 150px;
@@ -97,7 +98,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  max-width: 1110px;
+  max-width: 1010px;
   margin: 0 auto;
   border-top: 1px solid rgba(128, 128, 128, 0.199);
   border-bottom: 1px solid rgba(128, 128, 128, 0.199);
@@ -107,7 +108,7 @@ main {
 
 /* popular products  */
 .popular--collection {
-  max-width: 1250px;
+  max-width: 1150px;
   margin: 0 auto 100px;
 }
 .collection-title {
@@ -148,7 +149,7 @@ main {
 /* featured section  */
 .featured-products-wrapper {
   width: 100%;
-  max-width: 1250px;
+  max-width: 1150px;
   margin: 0 auto 100px;
   display: flex;
   align-items: center;
@@ -172,9 +173,58 @@ main {
   color: var(--bg-light);
   line-height: 1.4;
 }
-/* .featured-img {
-  width: 30%;
+@media  only screen and (max-width:576px) {
+.header {
+    justify-content: center;
+    padding: 10px 10px;
+    line-height: 1.5;
 }
-.featured-desc {
-  width: 70%;
+.wrapper--primary {
+  justify-content: center;
+  padding: 10px 10px;
+  gap: 36px;
+  flex-direction: column-reverse;
+}
+.cards-wrapper {
+  grid-template-columns: 1fr;
+  gap: 30px;
+  background: rgba(0, 0, 0, 0.089);
+  margin-bottom: 20px;
+}
+.featured-products-wrapper {
+  margin: 0 auto 50px;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column-reverse;
+}
+.title--primary {
+  font-size: var(--large-font);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.sub--title-primary {
+  color: var(--dark-font-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.btn--primary {
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: block;
+}
+.adv {
+  margin-bottom: 20px;
+}
+.popular--collection {
+  margin: 0 auto 20px;
+}
+.featured-title, .featured-desc {
+  text-align: center;
+}
+/* .featured-img img {
+  width: 100%;
+}
+.img-primary img {
+  width: 100%;
 } */
+}
